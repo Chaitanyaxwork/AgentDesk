@@ -1,0 +1,48 @@
+{
+  "name": "agentdesk",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.9 <25"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint src scripts tests public next.config.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts tests/*.test.mjs",
+    "sync:razorpay:test-plans": "tsx scripts/sync-razorpay-plans.ts",
+    "eval:rag": "node scripts/evaluate-rag.mjs",
+    "eval:rag:live": "node --import tsx scripts/evaluate-rag-live.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^2.29.1",
+    "@supabase/ssr": "^0.5.1",
+    "@supabase/supabase-js": "^2.45.6",
+    "cheerio": "^1.0.0",
+    "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
+    "ipaddr.js": "^2.5.0",
+    "lucide-react": "^0.453.0",
+    "next": "^15.5.27",
+    "razorpay": "^2.9.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.13.0",
+    "sonner": "^2.0.8",
+    "tailwind-merge": "^2.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.5.27",
+    "postcss": "^8.5.30",
+    "tailwindcss": "^3.4.14",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules/
+.next/
+supabase/.temp/
+.env*
+!.env.example
+*.tsbuildinfo
+.local-test-accounts.env
+AGENTDESK-TEST-RESULTS 2.md
+AUTONOMOUS-RESUME 2.md

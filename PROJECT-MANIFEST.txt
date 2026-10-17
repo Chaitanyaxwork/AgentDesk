@@ -1,0 +1,27 @@
+AgentDesk final project manifest
+================================
+
+Archive project root: backend/
+
+Included: application source and routes, public widget, Supabase schema and ordered migrations, package manifest and lockfile, tests, synthetic evaluation dataset and offline/live evaluation harnesses, README and setup/status/test/AI-evaluation/training/staging-checklist/deployment-readiness reports (including current staging/live-test results), autonomous progress/resume records, next-agent handoff, and `.env.example` with placeholder values.
+
+Important evaluation and reliability files:
+- scripts/evaluate-rag.mjs
+- scripts/evaluate-rag-live.ts
+- tests/fixtures/agentdesk-rag-eval.json (version 2, 102 cases, 3 fictional businesses, 64 train / 38 held-out)
+- tests/rag-evaluation.test.mjs
+- src/lib/chat-idempotency.ts
+- src/lib/supabase/keys.ts and src/lib/supabase/server-keys.ts
+- tests/supabase-keys.test.ts
+- src/lib/rag-citations.ts
+- src/lib/rag-query.ts, src/lib/workspace-resolution.ts
+- tests/rag-citations.test.ts, tests/rag-query.test.ts
+- tests/backend-workspace-resolution.test.ts, tests/backend-write-security.test.ts
+- tests/widget-security.test.ts, tests/widget-storage.test.ts
+- tests/cors-deployment.test.ts, tests/widget-public-script.test.ts, tests/ai-model-config.test.ts
+- supabase/migrations/20261017_chat_idempotency.sql
+- AUTONOMOUS-PROGRESS.md, AUTONOMOUS-TODO.md, AUTONOMOUS-RESUME.md
+- AGENTDESK-STAGING-CHECKLIST.md
+- AGENTDESK-DEPLOYMENT-READINESS.md, AGENTDESK-NEXT-AGENT-HANDOFF.md
+
+Archive exclusions: node_modules, `.next`, caches, TypeScript build info, `.git`, local environment files including `.env.local`, and generated build artifacts. `.env.example` has placeholders only. No provider credentials, customer records, payment data, or trained model weights are included.

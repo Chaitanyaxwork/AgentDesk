@@ -1,0 +1,2 @@
+import { Bot } from 'lucide-react';
+export function Logo({small=false}:{small?:boolean}){return <div className="flex items-center gap-2.5"><span className="flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-500 text-white shadow-lg shadow-indigo-500/25"><Bot size={20}/></span>{!small&&<span className="text-[17px] font-semibold tracking-tight">agent<span className="text-indigo-400">desk</span></span>}</div>}
